@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Sistema de Login</title>
+</head>
+<body>
+   <script>
+    let usuario = prompt("Digite seu nome de usuário:");
+    let senha = prompt("Digite sua senha:");
+
+    let usuarioCorreto = "joao";
+    let senhaCorreta = "4321";
+
+    if(usuario !== usuarioCorreto){
+        alert("Usuário não encontrado");
+    }
+    else if(senha !== senhaCorreta){
+        alert("Senha incorreta");
+    }
+    else{
+        alert("Acesso permitido");
+    }
+   </script> 
+</body>
+</html>

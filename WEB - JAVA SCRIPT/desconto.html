@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto Progressivo</title>
+</head>
+<body>
+    <script>
+        let valortxt = prompt("Digite o valor da compra:");
+
+        let valor = Number(valortxt);
+
+        if(valor >=500.00){
+            let desconto = valor * 0.20;
+            let valorFinal = valor - desconto;
+            alert("Desconto 20% - Valor final: R$ " + valorFinal.toFixed(2));
+        } else if(valor >=200.00){
+            let desconto = valor * 0.10;
+            let valorFinal = valor - desconto;
+            alert("Desconto 10% -  Valor final: R$ " + valorFinal.toFixed(2));
+        }else if(valor >=100.00){
+            let desconto = valor * 0.05;
+            let valorFinal = valor - desconto;
+            alert("Desconto 5% - Valor final: R$ " + valorFinal.toFixed(2));
+        } else {
+            alert("Nenhum desconto aplicado. Valor final: R$ " + valor.toFixed(2));
+        }
+    </script>
+</body>
+</html>

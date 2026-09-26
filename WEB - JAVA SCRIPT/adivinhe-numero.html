@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o Número</title>
+</head>
+<body>
+    <script>
+        let nSecreto = 7;
+let palpite;
+let contador = 0;
+
+while (palpite != nSecreto) {
+
+    palpite = Number(prompt("Adivinhe o número de 1 a 10:"));
+
+    contador++;
+
+    if (palpite < nSecreto) {
+        alert("Muito baixo! Tente um número maior.");
+
+    } else if (palpite > nSecreto) {
+        alert("Muito alto! Tente um número menor.");
+    }
+}
+
+alert("Você acertou em " + contador + " tentativas!");
+        
+    </script>
+</body>
+</html>

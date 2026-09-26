@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Triângulo</title>
+</head>
+<body>
+    <script>
+        let basetxt = prompt("Digite a base do triângulo:");
+        let ladoAtxt = prompt("Digite o a altura de um lado do triângulo:");   
+        let ladoBtxt = prompt("Digite a altura do outro lado do triângulo:");
+        
+        let base = Number(basetxt);
+        let ladoA = Number(ladoAtxt);
+        let ladoB = Number(ladoBtxt);
+
+        if(base >= ladoA + ladoB || ladoA >= base + ladoB || ladoB >= base + ladoA){
+            alert("Triângulo inválido");
+        } else if (base == ladoA && ladoA == ladoB) {
+            alert("Triângulo equilátero");
+        } else if (base == ladoA || base == ladoB || ladoA == ladoB) {
+            alert("Triângulo isósceles");
+        } else {
+            alert("Triângulo escaleno")
+           
+        }
+    </script>
+</body>
+</html>
